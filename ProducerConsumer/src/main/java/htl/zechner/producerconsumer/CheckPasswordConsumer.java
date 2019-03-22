@@ -41,6 +41,8 @@ public class CheckPasswordConsumer implements Runnable{
           Logger.getLogger(CheckPasswordConsumer.class.getName()).log(Level.SEVERE, null, ex);
       } catch (IOException ex) {
           Logger.getLogger(CheckPasswordConsumer.class.getName()).log(Level.SEVERE, null, ex);
+      } catch (InterruptedException ex) {
+          Logger.getLogger(CheckPasswordConsumer.class.getName()).log(Level.SEVERE, null, ex);
       } 
     }
 
