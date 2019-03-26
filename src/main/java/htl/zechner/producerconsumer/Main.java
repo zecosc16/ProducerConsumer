@@ -14,10 +14,16 @@ import java.util.Scanner;
  */
 public class Main {
 
-    private ArrayList<Password> passwords = new ArrayList<>();
+    private final ArrayList<Password> passwords = new ArrayList<>();
+    
+    public void readPwIn(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter password");
+        String s = sc.nextLine();
+        passwords.add(new Password(s));
+    }
     
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         
     }
     
